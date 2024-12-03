@@ -6,8 +6,8 @@ export default defineConfig({
   plugins: [react()],
   server: {
     proxy: {
-      "/api": { target: "http://localhost:2024", changeOrigin: true },
-      "/image": { target: "http://localhost:2024", changeOrigin: true },
+      "/api": { target: "https://finalprojectserver-enmw.onrender.com", changeOrigin: true },
+      "/image": { target: "https://finalprojectserver-enmw.onrender.com", changeOrigin: true },
     },
   },
 });
