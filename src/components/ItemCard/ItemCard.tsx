@@ -1,3 +1,4 @@
+const IMG_URL = import.meta.env.VITE_IMG_URL;
 import {
   Box,
   Button,
@@ -53,7 +54,7 @@ export const ItemCard = (prop: {
               display: "block",
               margin: "auto",
             }}
-            src={"/images/" + item.image}
+            src={`${IMG_URL}/images/` + item.image}
             alt={item.name}
           />
         </Box>

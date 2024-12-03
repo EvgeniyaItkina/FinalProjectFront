@@ -1,6 +1,7 @@
 import { Box, Button, Grid2, IconButton, Typography } from "@mui/material";
 import FavoriteIcon from "@mui/icons-material/Favorite";
 import { IProduct } from "../../type";
+const IMG_URL = import.meta.env.VITE_IMG_URL;
 
 export const ItemRow = (prop: {
     item: IProduct;
@@ -31,7 +32,7 @@ export const ItemRow = (prop: {
                             display: "block",
                             margin: "auto",
                         }}
-                        src={"/images/" + item.image}
+                        src={`${IMG_URL}/images/` + item.image}
                         alt={item.name}
                     />
                 </Box>
