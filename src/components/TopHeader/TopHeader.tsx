@@ -123,8 +123,12 @@ export function TopHeader() {
                         >
 
                             {pages.map((page, index) => {
-                                const [text, path, regime] = page;
-                                let onClick = undefined;
+                                const [text, path, regime, forRole] = page;
+                                let onClick = (
+                                    _: React.MouseEvent<HTMLAnchorElement, MouseEvent>
+                                ) => {
+                                    handleCloseNavMenu();
+                                };
                                 if (path === "/logout") {
                                     onClick = (
                                         e: React.MouseEvent<HTMLAnchorElement, MouseEvent>
@@ -135,7 +139,8 @@ export function TopHeader() {
                                     };
                                 }
                                 if (regime === authState || regime === "")
-                                    return (
+                                    if (forRole === isAdmin || forRole === undefined)
+                                        return (
                                         <MenuItem key={index} onClick={handleCloseNavMenu}>
                                             <Button
                                                 to={path}
