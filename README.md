@@ -1,4 +1,4 @@
-# Flying Teapot Shop – Frontend
+# Flying Teapot Shop - Frontend
 
 Frontend for the **Flying Teapot Shop**, an online tea store built as part of a Full-Stack Web Development course. This repository contains the frontend portion of the project, developed using **React**, **TypeScript**, and **Material-UI**.
 
@@ -28,18 +28,21 @@ Frontend for the **Flying Teapot Shop**, an online tea store built as part of a 
 
 1. **Clone the repository:**
 
-git clone https://github.com/EvgeniyaItkina/FinalProjectFront.git
-cd FinalProjectFront
+  git clone https://github.com/EvgeniyaItkina/FinalProjectFront.git
+
+  cd FinalProjectFront
 
 2. **Install dependencies:**
 
-npm install
+  npm install
 
 3. **Run the development server:**
-npm run dev
+
+  npm run dev
 
 4. **Build the project for production:**
-npm run build
+
+  npm run build
 
 ## About the Full Project
 This is the frontend part of the Flying Teapot Shop project, which includes both frontend and backend development.
